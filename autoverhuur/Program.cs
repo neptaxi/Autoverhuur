@@ -52,9 +52,15 @@ namespace autoverhuur
 
         static List<Auto> GeefAutoOpVoorkeuren(double vermogen, string merk)
         {
-            List<Auto> autosopvoorkeuren = autos;
+            //Lijst clonen
+            List<Auto> autosopvoorkeuren = new List<Auto>();
 
-            for(int i = autosopvoorkeuren.Count-1; i>=0; i--)
+            foreach (Auto item in autos)
+            {
+                autosopvoorkeuren.Add(item);
+            }
+
+            for (int i = autosopvoorkeuren.Count-1; i>=0; i--)
             {
                 if (!/*Voorkeur*/)
                 {
