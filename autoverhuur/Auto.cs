@@ -15,7 +15,20 @@ namespace autoverhuur
             Gas
         }
 
+<<<<<<< HEAD
         public string Kenteken { get; private set; }
+=======
+        public enum Soorten
+        {
+            Personenauto,
+            Vrachtwagen,
+            Truck,
+            Tractor
+        }
+
+        public string Kenteken { get; private set; }
+        public Soorten Soort { get; private set; }
+>>>>>>> 3574c61a7ec3bdb2f089e3dbd8a7d02c523589fc
         public string Merk { get; private set; }
         public double PrijsPerUur { get; set; }
         public double PrijsKlasse { get; set; }
@@ -27,11 +40,19 @@ namespace autoverhuur
         public DateTime EindHuur { get; set; }
         public double Vermogen { get; private set; }
 
+<<<<<<< HEAD
         public Auto(string kenteken, string merk, double prijsPerUur, double prijsKlasse, 
+=======
+        public Auto(string kenteken, Soorten soort, string merk, double prijsPerUur, double prijsKlasse, 
+>>>>>>> 3574c61a7ec3bdb2f089e3dbd8a7d02c523589fc
                     bool verzekerd, Brandstoffen brandstof, int aantalStoelen, int klantNummer, DateTime startHuur, 
                     DateTime eindHuur, double vermogen)
         {
             Kenteken = kenteken;
+<<<<<<< HEAD
+=======
+            Soort = soort;
+>>>>>>> 3574c61a7ec3bdb2f089e3dbd8a7d02c523589fc
             Merk = merk;
             PrijsPerUur = prijsPerUur;
             PrijsKlasse = prijsKlasse;
@@ -47,6 +68,10 @@ namespace autoverhuur
         public void ToonAutoGegevens()
         {
             Console.WriteLine("Kenteken: {0}", Kenteken);
+<<<<<<< HEAD
+=======
+            Console.WriteLine("Soort: {0}", Soort.ToString());
+>>>>>>> 3574c61a7ec3bdb2f089e3dbd8a7d02c523589fc
             Console.WriteLine("Merk: {0}", Merk);
             Console.WriteLine("Prijs per uur: {0}", PrijsPerUur.ToString());
             Console.WriteLine("Prijs Klasse: {0}", PrijsKlasse.ToString());

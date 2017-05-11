@@ -6,10 +6,11 @@ using System.Threading.Tasks;
 
 namespace autoverhuur
 {
+ 
     class Program
     {
-        List<Auto> autos = new List<Auto>();
-        List<Klant> klanten = new List<Klant>();
+        public List<Auto> autos = new List<Auto>();
+        public List<Klant> klanten = new List<Klant>();
 
         static void Main(string[] args)
         {
@@ -34,7 +35,6 @@ namespace autoverhuur
         {
 
         }
-
         static void ToonKlanten()
         {
 
@@ -55,7 +55,7 @@ namespace autoverhuur
             //Lijst clonen
             List<Auto> autosopvoorkeuren = new List<Auto>();
 
-            foreach (Auto item in autos)
+            foreach (Auto item in auto)
             {
                 autosopvoorkeuren.Add(item);
             }
